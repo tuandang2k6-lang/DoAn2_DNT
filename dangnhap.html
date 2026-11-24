@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập / Đăng ký - NXB Kim Đồng</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/dangnhap.css">
+</head>
+<body>
+
+  <!-- 1. THANH LIÊN HỆ + HEADER + MENU (giống trang chủ) -->
+  <div class="topbar">
+    <span>📞 (+84)0973223995</span>
+    <span>✉ cskh_online@nxbkimdong.com.vn</span>
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="../IMG/banner/logo.png" alt="Kim Đồng">
+      <span>KIM ĐỒNG</span>
+    </a>
+    <div class="header-icons">
+      <a href="dangnhap.html" title="Tài khoản">👤</a>
+      <a href="#" title="Yêu thích">♡<em class="badge">0</em></a>
+      <a href="giohang.html" title="Giỏ hàng">🛒<em class="badge">0</em></a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="#">Hàng mới</a></li>
+      <li><a href="index.html#preorder">Pre-order</a></li>
+      <li><a href="index.html#manga">Manga - Comic</a></li>
+      <li><a href="#">Khuyến mãi</a></li>
+      <li><a href="index.html#footer">Liên hệ</a></li>
+      <li><a href="tintuc.html">Tin tức</a></li>
+    </ul>
+  </nav>
+
+  <!-- 2. KHUNG ĐĂNG NHẬP / ĐĂNG KÝ -->
+  <main class="auth-wrap">
+    <div class="auth-box">
+
+      <div class="auth-tabs">
+        <button class="tab active" id="tabLogin">Đăng nhập</button>
+        <button class="tab" id="tabRegister">Đăng ký</button>
+      </div>
+
+      <!-- 2.1 FORM ĐĂNG NHẬP -->
+      <form class="auth-form" id="formLogin" novalidate>
+        <p class="msg" id="lgMsg"></p>
+
+        <div class="field">
+          <label for="lgUser">Tài khoản</label>
+          <input type="text" id="lgUser" placeholder="Nhập tên tài khoản">
+          <small class="error" id="lgUserErr"></small>
+        </div>
+
+        <div class="field">
+          <label for="lgPass">Mật khẩu</label>
+          <div class="pass-wrap">
+            <input type="password" id="lgPass" placeholder="Nhập mật khẩu">
+            <button type="button" class="eye" data-target="lgPass">👁</button>
+          </div>
+          <small class="error" id="lgPassErr"></small>
+        </div>
+
+        <div class="row-between">
+          <label class="check"><input type="checkbox" id="lgRemember"> Ghi nhớ đăng nhập</label>
+          <a href="#" id="linkForgot">Quên mật khẩu?</a>
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="btn-main">ĐĂNG NHẬP</button>
+          <button type="button" class="btn-sub" id="toRegister">ĐĂNG KÝ</button>
+        </div>
+      </form>
+
+      <!-- 2.2 FORM ĐĂNG KÝ -->
+      <form class="auth-form hidden" id="formRegister" novalidate>
+        <p class="msg" id="rgMsg"></p>
+
+        <div class="field">
+          <label for="rgName">Họ và tên</label>
+          <input type="text" id="rgName" placeholder="Ví dụ: Nguyễn Văn A">
+          <small class="error" id="rgNameErr"></small>
+        </div>
+
+        <div class="field">
+          <label>Giới tính</label>
+          <div class="radios">
+            <label><input type="radio" name="rgGender" value="Nam" checked> Nam</label>
+            <label><input type="radio" name="rgGender" value="Nữ"> Nữ</label>
+            <label><input type="radio" name="rgGender" value="Khác"> Khác</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="rgPhone">Số điện thoại</label>
+          <input type="text" id="rgPhone" placeholder="Ví dụ: 0912345678">
+          <small class="error" id="rgPhoneErr"></small>
+        </div>
+
+        <div class="field">
+          <label for="rgEmail">Email</label>
+          <input type="text" id="rgEmail" placeholder="Ví dụ: abc@gmail.com">
+          <small class="error" id="rgEmailErr"></small>
+        </div>
+
+        <div class="field">
+          <label for="rgUser">Tên tài khoản</label>
+          <input type="text" id="rgUser" placeholder="Ít nhất 4 ký tự, không dấu, không cách">
+          <small class="error" id="rgUserErr"></small>
+        </div>
+
+        <div class="field">
+          <label for="rgPass">Mật khẩu</label>
+          <div class="pass-wrap">
+            <input type="password" id="rgPass" placeholder="Ít nhất 6 ký tự">
+            <button type="button" class="eye" data-target="rgPass">👁</button>
+          </div>
+          <small class="error" id="rgPassErr"></small>
+          <div class="strength"><span id="rgStrengthBar"></span></div>
+          <small class="strength-text" id="rgStrengthText"></small>
+        </div>
+
+        <div class="field">
+          <label for="rgPass2">Nhập lại mật khẩu</label>
+          <div class="pass-wrap">
+            <input type="password" id="rgPass2" placeholder="Nhập lại mật khẩu">
+            <button type="button" class="eye" data-target="rgPass2">👁</button>
+          </div>
+          <small class="error" id="rgPass2Err"></small>
+        </div>
+
+        <label class="check"><input type="checkbox" id="rgAgree"> Tôi đồng ý với điều khoản sử dụng</label>
+        <small class="error" id="rgAgreeErr"></small>
+
+        <button type="submit" class="btn-main">ĐĂNG KÝ</button>
+        <p class="switch">Đã có tài khoản? <a href="#" id="toLogin">Đăng nhập</a></p>
+      </form>
+
+      <!-- 2.3 FORM QUÊN MẬT KHẨU -->
+      <form class="auth-form hidden" id="formForgot" novalidate>
+        <h3 class="forgot-title">Quên mật khẩu</h3>
+        <p class="msg" id="fgMsg"></p>
+
+        <div class="field">
+          <label for="fgEmail">Email đã đăng ký</label>
+          <input type="text" id="fgEmail" placeholder="Nhập email của bạn">
+          <small class="error" id="fgEmailErr"></small>
+        </div>
+
+        <div class="field">
+          <label for="fgPass">Mật khẩu mới</label>
+          <div class="pass-wrap">
+            <input type="password" id="fgPass" placeholder="Ít nhất 6 ký tự">
+            <button type="button" class="eye" data-target="fgPass">👁</button>
+          </div>
+          <small class="error" id="fgPassErr"></small>
+        </div>
+
+        <button type="submit" class="btn-main">ĐẶT LẠI MẬT KHẨU</button>
+        <p class="switch"><a href="#" id="backLogin">← Quay lại đăng nhập</a></p>
+      </form>
+
+    </div>
+  </main>
+
+  <!-- 3. FOOTER -->
+  <footer class="footer" id="footer">
+    <h4>HỖ TRỢ</h4>
+    <h3>NHÀ XUẤT BẢN KIM ĐỒNG</h3>
+    <p>📍 Số 55 Quang Trung, Phường Hai Bà Trưng, Thành phố Hà Nội</p>
+    <p>🎧 (+84) 1900571595</p>
+    <p>✉ cskh_online@nxbkimdong.com.vn</p>
+  </footer>
+
+  <script src="../JS/dangnhap.js"></script>
+</body>
+</html>

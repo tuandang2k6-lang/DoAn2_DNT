@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NXB Kim Đồng - Trang chủ</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+  <!-- 1. THANH LIÊN HỆ TRÊN CÙNG -->
+  <div class="topbar">
+    <span>📞 (+84)0973223995</span>
+    <span>✉ cskh_online@nxbkimdong.com.vn</span>
+  </div>
+
+  <!-- 2. HEADER: LOGO + ICON -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="../IMG/banner/logo.png" alt="Kim Đồng">
+      <span>KIM ĐỒNG</span>
+    </a>
+    <form class="search-box" id="searchForm">
+      <input type="text" id="searchInput" placeholder="Tìm truyện theo tên..." autocomplete="off">
+      <button type="submit" title="Tìm kiếm">⌕</button>
+    </form>
+    <div class="header-icons">
+    <a href="dangnhap.html" id="userLink" title="Tài khoản">👤</a>
+      <a href="#" title="Yêu thích">♡<em class="badge">0</em></a>
+      <a href="giohang.html" title="Giỏ hàng">🛒<em class="badge">0</em></a>
+    </div>
+  </header>
+
+  <!-- 3. THANH MENU (DÍNH KHI CUỘN) -->
+  <nav class="navbar" id="navbar">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html" class="active">Trang chủ</a></li>
+      <li><a href="#">Hàng mới</a></li>
+      <li><a href="#preorder">Pre-order</a></li>
+      <li><a href="#manga">Manga - Comic</a></li>
+      <li><a href="#">Khuyến mãi</a></li>
+      <li><a href="#footer">Liên hệ</a></li>
+      <li><a href="tintuc.html">Tin tức</a></li>
+    </ul>
+  </nav>
+
+  <!-- 4. BANNER TRƯỢT -->
+  <section class="slider">
+    <div class="slide show" style="background:linear-gradient(120deg,#ffd9a0,#ff9a8b)">
+        <img src="../IMG/banner/banner_img1.jpg" alt="Từ cuốn sách nhỏ đến thế giới lớn">
+    </div>
+    <div class="slide" style="background:linear-gradient(120deg,#a1c4fd,#c2e9fb)">
+        <img src="../IMG/banner/banner_img2.jpg" alt="Từ cuốn sách nhỏ đến thế giới lớn">
+    </div>
+    <div class="slide" style="background:linear-gradient(120deg,#d4fc79,#96e6a1)">
+        <img src="../IMG/banner/banner_img3.jpg" alt="Từ cuốn sách nhỏ đến thế giới lớn">
+    </div>
+    <button class="arrow prev" id="prevBtn">&#10094;</button>
+    <button class="arrow next" id="nextBtn">&#10095;</button>
+  </section>
+
+  <main>
+    <p class="no-result" id="noResult"></p>
+    <!-- 5. PRE-ORDER -->
+    <section class="container" id="preorder">
+      <h2 class="title">PRE-ORDER 9H 5/11</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/manga_comic/manga_comic_1.jpg" alt="Shikimori">
+            <span class="sale">-10%</span>
+            <span class="tag">Sắp phát hành</span>
+          </div>
+          <h3>(Tập lẻ) Shikimori đâu chỉ dễ thương 4</h3>
+          <p class="price">29.700đ <del>33.000đ</del></p>
+        </div>
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/manga_comic/manga_comic_2.jpg" alt="Bluelock">
+            <span class="sale">-10%</span>
+            <span class="tag">Sắp phát hành</span>
+          </div>
+          <h3>(Tập lẻ) Bluelock 35</h3>
+          <p class="price">38.250đ <del>42.500đ</del></p>
+        </div>
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/manga_comic/manga_comic_3.jpg" alt="Mèo siêu đỉnh">
+            <span class="sale">-10%</span>
+            <span class="tag">Sắp phát hành</span>
+          </div>
+          <h3>(Tập lẻ) Mèo siêu đỉnh hôm nay lại buồn thỉu 1</h3>
+          <p class="price">40.500đ <del>45.000đ</del></p>
+        </div>
+                <div class="card">
+          <div class="cover">
+            <img src="../IMG/manga_comic/manga_comic_4.jpg" alt="Conan">
+            <span class="sale">-10%</span>
+            <span class="tag">Sắp phát hành</span>
+          </div>
+          <h3>(Tập lẻ) Thám tử lừng danh Conan 105</h3>
+          <p class="price">28.800đ <del>32.000đ</del></p>
+        </div>
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/doraemon/doraemon1.jpg" alt="Doraemon">
+            <span class="sale">-10%</span>
+            <span class="tag">Sắp phát hành</span>
+          </div>
+          <h3>(Tập lẻ) Doraemon - Truyện dài tập 25</h3>
+          <p class="price">31.500đ <del>35.000đ</del></p>
+        </div>
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/manga_comic/manga_comic_5.jpg" alt="Kaiju No.8">
+            <span class="sale">-10%</span>
+            <span class="tag">Sắp phát hành</span>
+          </div>
+          <h3>(Tập lẻ) Kaiju No.8 - Tập 12</h3>
+          <p class="price">34.200đ <del>38.000đ</del></p>
+        </div>
+      </div>
+      <p class="more"><a href="#">Xem thêm &gt;&gt;</a></p>
+    </section>
+
+    <!-- 6. BANNER MANGA --1111111111111111111111111-->
+     <section class="manga-banner">
+      <!-- Chỉ cần 1 thẻ img duy nhất -->
+      <img src="../IMG/banner/banner_home_3.jpg" alt="Từ cuốn sách nhỏ đến thế giới lớn">
+    </section>
+
+    <!-- 7. MANGA - COMIC -->
+    <section class="container" id="manga">
+      <h2 class="title red">MANGA - COMIC</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/doraemon/doraemon2.jpg" alt="One Piece">
+            <span class="sale">-10%</span>
+            <span class="tag gray">Hết hàng</span>
+          </div>
+          <h3> Doraemon - Tập 12</h3>
+          <p class="price">22.500đ <del>25.000đ</del></p>
+        </div>
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/doraemon/doraemon3.jpg" alt="Hoa hồng anh">
+            <span class="sale">-10%</span>
+          </div>
+          <h3> Doraemon - Tập 3</h3>
+          <p class="price">54.000đ <del>60.000đ</del></p>
+        </div>
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/doraemon/doraemon4.jpg" alt="Fullmetal Alchemist">
+            <span class="sale">-10%</span>
+          </div>
+          <h3> Doraemon - Tập 10</h3>
+          <p class="price">49.500đ <del>55.000đ</del></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- 6. BANNER MANGA --2222222222222222222222-->
+     <section class="manga-banner">
+      <!-- Chỉ cần 1 thẻ img duy nhất -->
+      <img src="../IMG/banner/banner_home_2.jpg" alt="Từ cuốn sách nhỏ đến thế giới lớn">
+    </section>
+
+    <!-- 7. MANGA - COMIC -->
+    <section class="container" id="manga">
+      <h2 class="title red">MANGA - COMIC</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/manga_comic/manga_comic_1.jpg" alt="One Piece">
+            <span class="sale">-10%</span>
+            <span class="tag gray">Hết hàng</span>
+          </div>
+          <h3>One Piece - Tập 1</h3>
+          <p class="price">22.500đ <del>25.000đ</del></p>
+        </div>
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/manga_comic/manga_comic_6.jpg" alt="Hoa hồng anh">
+            <span class="sale">-10%</span>
+          </div>
+          <h3>Ngọn đồi hoa hồng anh</h3>
+          <p class="price">54.000đ <del>60.000đ</del></p>
+        </div>
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/manga_comic/manga_comic_5.jpg" alt="Fullmetal Alchemist">
+            <span class="sale">-10%</span>
+          </div>
+          <h3>Fullmetal Alchemist - Tập 1</h3>
+          <p class="price">49.500đ <del>55.000đ</del></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- 6. BANNER MANGA --3333333333333333333333333333-->
+     <section class="manga-banner">
+      <!-- Chỉ cần 1 thẻ img duy nhất -->
+      <img src="../IMG/banner/banner_home_1.jpg" alt="Từ cuốn sách nhỏ đến thế giới lớn">
+    </section>
+
+    <!-- 7. MANGA - COMIC -->
+    <section class="container" id="manga">
+      <h2 class="title red">MANGA - COMIC</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/manga_comic/manga_comic_6.jpg" alt="One Piece">
+            <span class="sale">-10%</span>
+            <span class="tag gray">Hết hàng</span>
+          </div>
+          <h3>One Piece - Tập 1</h3>
+          <p class="price">22.500đ <del>25.000đ</del></p>
+        </div>
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/mua1tang1/mua1tang1_1.jpg" alt="Hoa hồng anh">
+            <span class="sale">-10%</span>
+          </div>
+          <h3>Ngọn đồi hoa hồng anh</h3>
+          <p class="price">54.000đ <del>60.000đ</del></p>
+        </div>
+        <div class="card">
+          <div class="cover">
+            <img src="../IMG/mua1tang1/mua1tang1_2.jpg" alt="Fullmetal Alchemist">
+            <span class="sale">-10%</span>
+          </div>
+          <h3>Fullmetal Alchemist - Tập 1</h3>
+          <p class="price">49.500đ <del>55.000đ</del></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- 8. FOOTER -->
+  <footer class="footer" id="footer">
+    <h4>HỖ TRỢ</h4>
+    <h3>NHÀ XUẤT BẢN KIM ĐỒNG</h3>
+    <p>📍 Số 55 Quang Trung, Phường Hai Bà Trưng, Thành phố Hà Nội</p>
+    <p>🎧 (+84) 1900571595</p>
+    <p>✉ cskh_online@nxbkimdong.com.vn</p>
+    <h4>KẾT NỐI MẠNG XÃ HỘI</h4>
+  </footer>
+
+  <script src="../JS/main.js"></script>
+</body>

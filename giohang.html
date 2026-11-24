@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng - NXB Kim Đồng</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/giohang.css">
+</head>
+<body>
+
+  <!-- 1. THANH LIÊN HỆ + HEADER + MENU (giống các trang khác) -->
+  <div class="topbar">
+    <span>📞 (+84) 1900571595</span>
+    <span>✉ cskh_online@nxbkimdong.com.vn</span>
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="../ẢNH/logo.png" alt="Kim Đồng">
+      <span>KIM ĐỒNG</span>
+    </a>
+    <div class="header-icons">
+      <a href="dangnhap.html" id="userLink" title="Tài khoản">👤</a>
+      <a href="#" title="Yêu thích">♡<em class="badge">0</em></a>
+      <a href="giohang.html" title="Giỏ hàng">🛒<em class="badge" id="cartCount">0</em></a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="#">Hàng mới</a></li>
+      <li><a href="index.html#preorder">Pre-order</a></li>
+      <li><a href="index.html#manga">Manga - Comic</a></li>
+      <li><a href="#">Khuyến mãi</a></li>
+      <li><a href="index.html#footer">Liên hệ</a></li>
+      <li><a href="tintuc.html">Tin tức</a></li>
+    </ul>
+  </nav>
+
+  <!-- 2. NỘI DUNG GIỎ HÀNG -->
+  <main class="cart-wrap">
+    <h1 class="cart-title" id="cartTitle">GIỎ HÀNG CỦA BẠN</h1>
+
+    <!-- 2.1 KHI GIỎ CÓ HÀNG -->
+    <div id="cartFilled">
+      <div class="cart-table">
+        <div class="cart-head">
+          <span>Thông tin sản phẩm</span>
+          <span>Đơn giá</span>
+          <span>Số lượng</span>
+          <span>Thành tiền</span>
+          <span></span>
+        </div>
+        <div id="cartList"></div>
+      </div>
+
+      <div class="cart-bottom">
+        <textarea id="ghiChu" placeholder="Ghi chú"></textarea>
+        <div class="cart-sum">
+          <p class="sum-total">Tổng: <b id="tongTien">0đ</b></p>
+          <p class="sum-save">Tiết kiệm: <span id="tietKiem">0đ</span></p>
+          <button type="button" class="btn-checkout" id="btnThanhToan">Tiến hành thanh toán</button>
+        </div>
+      </div>
+
+      <a href="index.html" class="back-link">↩ Tiếp tục mua hàng</a>
+    </div>
+
+    <!-- 2.2 KHI GIỎ TRỐNG -->
+    <div class="cart-empty" id="cartEmpty">
+      <p>🛒 Giỏ hàng của bạn đang trống.</p>
+      <a href="index.html" class="btn-checkout">Tiếp tục mua hàng</a>
+    </div>
+  </main>
+
+  <!-- 3. FOOTER -->
+  <footer class="footer" id="footer">
+    <h4>HỖ TRỢ</h4>
+    <h3>NHÀ XUẤT BẢN KIM ĐỒNG</h3>
+    <p>📍 Số 55 Quang Trung, Phường Hai Bà Trưng, Thành phố Hà Nội</p>
+    <p>🎧 (+84) 1900571595</p>
+    <p>✉ cskh_online@nxbkimdong.com.vn</p>
+  </footer>
+
+  <!-- 4. THÔNG BÁO NỔI -->
+  <div class="toast" id="toast"></div>
+
+  <script src="../JS/giohang.js"></script>
+</body>
+</html>

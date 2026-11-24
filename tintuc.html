@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin tức - NXB Kim Đồng</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/tintuc.css">
+</head>
+<body>
+
+  <!-- 1. THANH LIÊN HỆ + HEADER + MENU (trang này không dùng JS) -->
+  <div class="topbar">
+    <span>📞 (+84) 1900571595</span>
+    <span>✉ cskh_online@nxbkimdong.com.vn</span>
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="../IMG/banner/logo.png" alt="Kim Đồng">
+      <span>KIM ĐỒNG</span>
+    </a>
+    <div class="header-icons">
+      <a href="dangnhap.html" title="Tài khoản">👤</a>
+      <a href="#" title="Yêu thích">♡</a>
+      <a href="giohang.html" title="Giỏ hàng">🛒</a>
+    </div>
+  </header>
+
+  <!-- Menu điện thoại dùng ô tích (checkbox) thay cho JavaScript -->
+  <nav class="navbar">
+    <input type="checkbox" id="menuToggle" class="menu-toggle">
+    <label for="menuToggle" class="menu-btn">☰</label>
+    <ul class="menu">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="#">Hàng mới</a></li>
+      <li><a href="index.html#preorder">Pre-order</a></li>
+      <li><a href="index.html#manga">Manga - Comic</a></li>
+      <li><a href="#">Khuyến mãi</a></li>
+      <li><a href="tintuc.html" class="active">Tin tức</a></li>
+      <li><a href="index.html#footer">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <!-- 2. NỘI DUNG TRANG TIN TỨC -->
+  <div class="news-wrap">
+
+    <!-- 2.1 DANH MỤC TIN TỨC (cột trái) -->
+    <aside class="news-side">
+      <h2>Danh mục tin tức</h2>
+      <ul>
+        <li><a href="#hoat-dong">Hoạt động</a></li>
+        <li><a href="#su-kien">Sự kiện</a></li>
+        <li><a href="#diem-sach">Điểm sách</a></li>
+        <li><a href="#sach-lau">Sách lậu - Sách giả</a></li>
+        <li><a href="#lich-phat-hanh">Lịch phát hành sách định kỳ</a></li>
+      </ul>
+    </aside>
+
+    <!-- 2.2 DANH SÁCH BÀI VIẾT (cột phải) -->
+    <main class="news-main">
+
+      <!-- Mục: HOẠT ĐỘNG -->
+      <section class="news-section" id="hoat-dong">
+        <h1>Hoạt động</h1>
+        <div class="news-grid">
+          <article class="news-card">
+            <a href="#" class="news-img"><img src="../IMG/tintuc/tin5.jpg" alt="Ngày hội đọc sách thiếu nhi"></a>
+            <div class="news-meta">
+              <span>📅 <time datetime="2026-11-18">18/11/26</time></span>
+              <span>💬 0</span>
+              <span>👤 Nhà xuất bản Kim Đồng</span>
+            </div>
+            <h3><a href="#">Ngày hội đọc sách thiếu nhi cùng Kim Đồng</a></h3>
+            <hr class="news-line">
+            <p class="news-excerpt">Chuỗi hoạt động đọc sách, vẽ tranh và kể chuyện dành cho các bạn nhỏ cùng phụ huynh, diễn ra tại các cửa hàng sách trong tháng 11.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Mục: ĐIỂM SÁCH -->
+      <section class="news-section" id="diem-sach">
+        <h1>Điểm sách</h1>
+        <div class="news-grid">
+          <article class="news-card">
+            <a href="#" class="news-img"><img src="../IMG/tintuc/tin6.jpg" alt="Điểm sách tháng 11"></a>
+            <div class="news-meta">
+              <span>📅 <time datetime="2026-11-12">12/11/26</time></span>
+              <span>💬 0</span>
+              <span>👤 Nhà xuất bản Kim Đồng</span>
+            </div>
+            <h3><a href="#">Điểm sách tháng 11: những tựa manga đáng đọc</a></h3>
+            <hr class="news-line">
+            <p class="news-excerpt">Gợi ý các bộ truyện tranh được bạn đọc quan tâm trong tháng, từ thể loại thể thao, trinh thám đến đời thường nhẹ nhàng.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Mục: SÁCH LẬU - SÁCH GIẢ -->
+      <section class="news-section" id="sach-lau">
+        <h1>Sách lậu - Sách giả</h1>
+        <div class="news-grid">
+          <article class="news-card">
+            <a href="#" class="news-img"><img src="../IMG/tintuc/tin7.jpg" alt="Nhận biết sách giả"></a>
+            <div class="news-meta">
+              <span>📅 <time datetime="2026-11-10">10/11/26</time></span>
+              <span>💬 0</span>
+              <span>👤 Nhà xuất bản Kim Đồng</span>
+            </div>
+            <h3><a href="#">Cách nhận biết sách giả, sách lậu khi mua truyện tranh</a></h3>
+            <hr class="news-line">
+            <p class="news-excerpt">Một vài dấu hiệu giúp bạn đọc phân biệt sách chính thức với sách in lậu: chất lượng giấy, màu in, tem và mã sản phẩm của nhà xuất bản.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Mục: LỊCH PHÁT HÀNH SÁCH ĐỊNH KỲ -->
+      <section class="news-section" id="lich-phat-hanh">
+        <h1>Lịch phát hành sách định kỳ</h1>
+        <div class="news-grid">
+          <article class="news-card">
+            <a href="#" class="news-img"><img src="../IMG/tintuc/tin8.jpg" alt="Lịch phát hành tháng 11"></a>
+            <div class="news-meta">
+              <span>📅 <time datetime="2026-11-01">01/11/26</time></span>
+              <span>💬 0</span>
+              <span>👤 Nhà xuất bản Kim Đồng</span>
+            </div>
+            <h3><a href="#">Lịch phát hành sách định kỳ tháng 11/2026</a></h3>
+            <hr class="news-line">
+            <p class="news-excerpt">Tổng hợp các tựa truyện tranh dự kiến phát hành trong tháng 11, kèm ngày mở đặt trước để bạn đọc tiện theo dõi.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Mục: SỰ KIỆN (hiện mặc định, nằm cuối để CSS ẩn được khi chọn mục khác) -->
+      <section class="news-section" id="su-kien">
+        <h1>Sự kiện</h1>
+        <div class="news-grid">
+
+          <article class="news-card">
+            <a href="#" class="news-img"><img src="../IMG/tintuc/tin1.jpg" alt="Chú bò tìm bạn"></a>
+            <div class="news-meta">
+              <span>📅 <time datetime="2026-11-20">20/11/26</time></span>
+              <span>💬 0</span>
+              <span>👤 Nhà xuất bản Kim Đồng</span>
+            </div>
+            <h3><a href="#">Góc đọc cuối tuần: Chú bò tìm bạn và những bài thơ khác</a></h3>
+            <hr class="news-line">
+            <p class="news-excerpt">Nhân dịp 100 năm ngày sinh nhà thơ Phạm Hổ, chương trình Góc đọc Cuối tuần mời các bạn nhỏ và phụ huynh cùng nghe thơ, trò chuyện và nhận quà tại Nhà xuất bản Kim Đồng.</p>
+          </article>
+
+          <article class="news-card">
+            <a href="#" class="news-img"><img src="../IMG/tintuc/tin2.jpg" alt="Họa sĩ Hoàng Giang"></a>
+            <div class="news-meta">
+              <span>📅 <time datetime="2026-11-16">16/11/26</time></span>
+              <span>💬 0</span>
+              <span>👤 Nhà xuất bản Kim Đồng</span>
+            </div>
+            <h3><a href="#">Họa sĩ Hoàng Giang - họa sĩ Việt Nam đầu tiên giành giải thưởng Golden Pinwheel 2026</a></h3>
+            <hr class="news-line">
+            <p class="news-excerpt">Cuốn sách tranh song ngữ “Kho tàng của bố – Loving Eyes” do họa sĩ Hoàng Giang minh họa vừa được vinh danh ở hạng mục quốc tế của giải thưởng.</p>
+          </article>
+
+          <article class="news-card">
+            <a href="#" class="news-img"><img src="../IMG/tintuc/tin3.jpg" alt="Giao lưu cùng bạn đọc trẻ"></a>
+            <div class="news-meta">
+              <span>📅 <time datetime="2026-11-08">08/11/26</time></span>
+              <span>💬 0</span>
+              <span>👤 Nhà xuất bản Kim Đồng</span>
+            </div>
+            <h3><a href="#">Chương trình giao lưu cùng bạn đọc trẻ tại Nhà xuất bản Kim Đồng</a></h3>
+            <hr class="news-line">
+            <p class="news-excerpt">Buổi giao lưu có phần biểu diễn, trò chơi và chia sẻ của các tác giả, họa sĩ với bạn đọc nhỏ tuổi cùng những cuốn sách mới ra mắt.</p>
+          </article>
+
+          <article class="news-card">
+            <a href="#" class="news-img"><img src="../IMG/tintuc/tin4.jpg" alt="Hành trình di sản"></a>
+            <div class="news-meta">
+              <span>📅 <time datetime="2026-11-05">05/11/26</time></span>
+              <span>💬 0</span>
+              <span>👤 Nhà xuất bản Kim Đồng</span>
+            </div>
+            <h3><a href="#">Hành trình di sản: Những người thầy trong sử Việt</a></h3>
+            <hr class="news-line">
+            <p class="news-excerpt">Cuốn sách kể về những người thầy tiêu biểu qua các thời kỳ lịch sử bằng ngôn ngữ gần gũi, kèm tranh minh họa dành cho bạn đọc trẻ.</p>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- 3. FOOTER -->
+  <footer class="footer" id="footer">
+    <h4>HỖ TRỢ</h4>
+    <h3>NHÀ XUẤT BẢN KIM ĐỒNG</h3>
+    <p>📍 Số 55 Quang Trung, Phường Hai Bà Trưng, Thành phố Hà Nội</p>
+    <p>🎧 (+84) 1900571595</p>
+    <p>✉ cskh_online@nxbkimdong.com.vn</p>
+  </footer>
+
+</body>
+</html>

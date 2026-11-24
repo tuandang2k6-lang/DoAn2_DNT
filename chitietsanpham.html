@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm - NXB Kim Đồng</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/chitietsanpham.css">
+</head>
+<body>
+
+  <!-- 1. THANH LIÊN HỆ + HEADER + MENU (giống trang chủ) -->
+  <div class="topbar">
+    <span>📞 (+84) 1900571595</span>
+    <span>✉ cskh_online@nxbkimdong.com.vn</span>
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="../ẢNH/logo.png" alt="Kim Đồng">
+      <span>KIM ĐỒNG</span>
+    </a>
+    <div class="header-icons">
+      <a href="dangnhap.html" id="userLink" title="Tài khoản">👤</a>
+      <a href="#" title="Yêu thích">♡<em class="badge">0</em></a>
+      <a href="giohang.html" title="Giỏ hàng">🛒<em class="badge" id="cartCount">0</em></a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="#">Hàng mới</a></li>
+      <li><a href="index.html#preorder">Pre-order</a></li>
+      <li><a href="index.html#manga">Manga - Comic</a></li>
+      <li><a href="#">Khuyến mãi</a></li>
+      <li><a href="index.html#footer">Liên hệ</a></li>
+      <li><a href="tintuc.html">Tin tức</a></li>
+    </ul>
+  </nav>
+
+  <!-- 2. NỘI DUNG CHI TIẾT SẢN PHẨM -->
+  <main class="detail-wrap">
+    <p class="breadcrumb"><a href="index.html">Trang chủ</a> / <span id="ctTenNho">Chi tiết sản phẩm</span></p>
+
+    <div class="detail" id="detail">
+
+      <!-- 2.1 ẢNH BÌA -->
+      <div class="detail-img">
+        <div class="detail-cover">
+          <img id="ctAnh" alt="Ảnh bìa">
+          <span class="sale" id="ctGiam"></span>
+          <span class="tag gray" id="ctHetHang" style="display:none">Hết hàng</span>
+          <span class="tag" id="ctSapPhatHanh" style="display:none">Sắp phát hành</span>
+        </div>
+      </div>
+
+      <!-- 2.2 THÔNG TIN + THÔNG SỐ -->
+      <div class="detail-info">
+        <h1 id="ctTen"></h1>
+
+        <div class="price-row">
+          <span class="gia-moi" id="ctGia"></span>
+          <del class="gia-cu" id="ctGiaCu"></del>
+          <span class="tiet-kiem" id="ctTietKiem"></span>
+        </div>
+
+        <ul class="specs">
+          <li>Mã Kim Đồng: <b id="ctMa"></b></li>
+          <li>Tác giả: <span class="red" id="ctTacGia"></span></li>
+          <li>Đối tượng: <span class="red" id="ctDoiTuong"></span></li>
+          <li>Khuôn khổ: <span id="ctKhuonKho"></span></li>
+          <li>Số trang: <span id="ctSoTrang"></span></li>
+          <li>Định dạng: <span id="ctDinhDang"></span></li>
+          <li>Trọng lượng: <span id="ctTrongLuong"></span></li>
+          <li>Bộ sách: <span class="red" id="ctBoSach"></span></li>
+        </ul>
+
+        <!-- 2.3 SỐ LƯỢNG + NÚT THÊM VÀO GIỎ HÀNG -->
+        <div class="buy">
+          <div class="qty">
+            <button type="button" id="btnGiam">−</button>
+            <input type="text" id="soLuong" value="1" maxlength="2">
+            <button type="button" id="btnTang">+</button>
+          </div>
+          <button type="button" class="btn-cart" id="btnThem">🛒 THÊM VÀO GIỎ HÀNG</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.4 KHÔNG TÌM THẤY SẢN PHẨM -->
+    <div class="not-found" id="notFound">
+      <p>😕 Không tìm thấy sản phẩm này.</p>
+      <p><a href="index.html">← Quay về trang chủ</a></p>
+    </div>
+  </main>
+
+  <!-- 3. FOOTER -->
+  <footer class="footer" id="footer">
+    <h4>HỖ TRỢ</h4>
+    <h3>NHÀ XUẤT BẢN KIM ĐỒNG</h3>
+    <p>📍 Số 55 Quang Trung, Phường Hai Bà Trưng, Thành phố Hà Nội</p>
+    <p>🎧 (+84) 1900571595</p>
+    <p>✉ cskh_online@nxbkimdong.com.vn</p>
+  </footer>
+
+  <!-- 4. THÔNG BÁO NỔI "ĐÃ THÊM VÀO GIỎ" -->
+  <div class="toast" id="toast"></div>
+
+  <script src="../JS/chitietsanpham.js"></script>
+</body>
+</html>
